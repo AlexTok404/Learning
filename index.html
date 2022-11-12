@@ -65,6 +65,39 @@
             flex:auto;
         }
       }
+      #app{height:200px;width:330px;}
+			figure{
+				height:200px;
+				width:320px;
+				overflow:hidden;
+        position:relative;
+				background:#000000;
+        margin:auto;
+			}
+			figure img{
+				height:100%;
+				width:100%;
+				transition:all 0.6s ease;
+				position:absolute;
+				opacity:1;
+			}
+			figure p{
+				position:absolute;
+				color:#fff;
+				transform:translate(-360px,0);
+				top:35%;
+				left:25%;
+				transition:all 0.6s ease;
+			}
+			figure:hover img{
+				transform:scale(1.2,1.2);
+				transition:all 0.6s ease;
+				opacity:0.6;
+			}
+			figure:hover p{
+				transform:translate(0,0);
+				transition:all 0.6s ease;
+			}
     </style>
   </head>
   <body class="flex">
@@ -104,7 +137,7 @@
     <div class="flex1 flex column">
       <!-- 头部栏 -->
       <div style="height: 100px; z-index: 1; text-align:center;" class="baise yinying">
-        <h1 style = "color:rgb(255, 196, 207)">还不知道写什么好，先就这样吧。</h1>
+        <h1 style = "color:rgb(255, 196, 207)">小A导航^o^</h1>
     </div>
       <!-- 内容区 -->
       <div style="overflow: auto" class="flex1 flex neirong">
@@ -113,10 +146,28 @@
           <!-- 数据区 -->
           <div class="flex shuju">
             <!-- 数据块 -->
-            <div style="height: 200px" class="shujukuai flex1 baise yinying mgr8">
- 
+            <div style="height: 200px;" class="shujukuai flex1 baise yinying mgr8" id = "app">
+                  <figure>
+                      <a href = "https://dimtown.com/" target = "-blank" title = "次元小镇">
+                        <img
+                          src = 'image/mikuBACKGROUND.jpg';
+                          alt = "次元小镇";                   
+                        >                   
+                      </a>
+                      <p>次元小镇</p> 
+                  </figure>
             </div>
-            <div style="height: 200px" class="shujukuai flex1 baise yinying mgr8"></div>
+            <div style="height: 200px" class="shujukuai flex1 baise yinying mgr8" id = "app">
+                <figure>
+                    <a href = 'https://www.runoob.com/' target = '-blank' title = "菜鸟教程">
+                      <img 
+                        src = "image/previe.jpg";
+                        alt = "菜鸟教程";
+                        >
+                        <p>菜鸟教程</p>
+                    </a>
+                </figure>    
+            </div>
             <div style="height: 200px" class="shujukuai flex1 baise yinying mgr8"></div>
             <div style="height: 200px" class="shujukuai flex1 baise yinying"></div>
           </div>
